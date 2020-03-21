@@ -4109,7 +4109,7 @@ jest-environment-jsdom@^25.1.0:
     jest-util "^25.1.0"
     jsdom "^15.1.1"
 
-jest-environment-node@^24.5.0, jest-environment-node@^24.8.0:
+jest-environment-node@^24.5.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-environment-node/-/jest-environment-node-24.9.0.tgz#333d2d2796f9687f2aeebf0742b519f33c1cbfd3"
   integrity sha512-6d4V2f4nxzIzwendo27Tr0aFm+IXWa0XEUnaH6nU0FMaozxovt+sfRvh4J47wL1OvF83I3SSTu0XK+i4Bqe7uA==
