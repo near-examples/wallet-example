@@ -19,7 +19,7 @@
     "assemblyscript": "^0.9.4",
     "gh-pages": "^2.1.1",
     "jest": "^25.1.0",
-    "jest-environment-node": "^24.8.0",
+    "jest-environment-node": "^25.2.0",
     "near-sdk-as": "^0.1.2",
     "near-shell": "^0.20.1",
     "parcel-bundler": "^1.12.4"
