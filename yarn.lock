@@ -100,7 +100,7 @@
     lodash "^4.17.13"
     source-map "^0.5.0"
 
-"@babel/generator@^7.9.0":
+"@babel/generator@^7.8.6", "@babel/generator@^7.9.0":
   version "7.9.4"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.9.4.tgz#12441e90c3b3c4159cdecf312075bf1a8ce2dbce"
   integrity sha512-rjP8ahaDy/ouhrvCoU1E5mqaitWrxwuNGU+dy1EpaoK48jZay4MdkskKGIMHLZNewg8sAsqpGSREJwP0zH3YQA==
@@ -883,7 +883,7 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@babel/types@^7.9.0":
+"@babel/types@^7.8.7", "@babel/types@^7.9.0":
   version "7.9.0"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.9.0.tgz#00b064c3df83ad32b2dbf5ff07312b15c7f1efb5"
   integrity sha512-BS9JKfXkzzJl8RluW4JGknzpiUV7ZrvTayM6yfqLTVBEnFtyowVIOu6rqxRd5cVO6yGoWf4T8u8dgK9oB+GCng==
@@ -4916,10 +4916,10 @@ near-sdk-as@^0.1.0-1, near-sdk-as@^0.1.5:
     semver "^7.1.3"
     wasm-mock-vm "^1.2.1"
 
-near-shell@^0.20.2:
-  version "0.20.2"
-  resolved "https://registry.yarnpkg.com/near-shell/-/near-shell-0.20.2.tgz#a13fc718f3267002a05b8740dfcc0f3c310a6dc2"
-  integrity sha512-E1EVRuTl+h3IF/8rc7RklA1F8PpvBO0LUYE/FSceujD7NSmjt6lh6I2fyR1dhAAsFg/0Z8FS2RQ5Noa8bQ7ooA==
+near-shell@^0.20.3:
+  version "0.20.3"
+  resolved "https://registry.yarnpkg.com/near-shell/-/near-shell-0.20.3.tgz#34c65a21717d05bcc55476a9a78f10f10d21c37b"
+  integrity sha512-WY0w6QTPdwQV01PrUrTKdBCIH68UyqHeg5qVPaX+kmUO0lLNf140oDiYESDS7mkWrc+87VQwukwXFSYPTvsy2Q==
   dependencies:
     bn "^1.0.5"
     bs58 "^4.0.1"
@@ -7573,10 +7573,10 @@ y18n@^4.0.0:
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
   integrity sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
 
-yargs-parser@^15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-15.0.0.tgz#cdd7a97490ec836195f59f3f4dbe5ea9e8f75f08"
-  integrity sha512-xLTUnCMc4JhxrPEPUYD5IBR1mWCK/aT6+RJ/K29JY2y1vD+FhtgKK0AXRWvI262q3QSffAQuTouFIKUuHX89wQ==
+yargs-parser@^15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-15.0.1.tgz#54786af40b820dcb2fb8025b11b4d659d76323b3"
+  integrity sha512-0OAMV2mAZQrs3FkNpDQcBk1x5HXb8X4twADss4S0Iuk+2dGnLOE/fRHrsYm542GduMveyA77OF4wrNJuanRCWw==
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
