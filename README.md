@@ -6,7 +6,7 @@ NEAR-ETH Token Interoperability Hack
 <!-- MAGIC COMMENT: DO NOT DELETE! Everything above this line is hidden on NEAR Examples page -->
 
 NEAR-ETH token interoperability
-NOTE: PLEASE switch to branch newx for working demo code
+NOTE: PLEASE switch to branch *newx3* for working demo code
 
 This project demonstrates a basic token swap: It allows you to mint 1 N-ETH on the NEAR blockchain, for every Wei deposited in a designated ethereum contract. In turn, upon burning these N-ETH, the ETH in the designated contract is released back to the sender(or to any ETH address of the burner's choice).
 
