@@ -16,7 +16,7 @@ With very minor changes, this could be used to carry out a 1:1 swap of any ERC20
 
 2. NEAR contract oracle detects deposited ETH. [Done]
 
-3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [Done]
+3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [Done without UX - newx2 branch]
 
 4. N-ETH tokens can be freely exchanged on NEAR Blockchain [WIP]
 
