@@ -8,7 +8,7 @@ Example of NEAR Wallet integration
 NEAR-ETH token interoperability
 NOTE: PLEASE SWITCH TO BRANCH NEWX FOR THE LATEST WORKING CODE
 
-This project demonstrates a basic token swap: It allows you to mint 1 N-DAI on the NEAR blockchain, for every Dai deposited in a designated ethereum contract. In turn, upon burning these N-DAI, the DAI in the designated contract is released back to the sender(or to any ETH address of the burner's choice).
+This project demonstrates a basic token swap: It allows you to mint 1 N-ETH on the NEAR blockchain, for every Wei deposited in a designated ethereum contract. In turn, upon burning these N-ETH, the ETH in the designated contract is released back to the sender(or to any ETH address of the burner's choice).
 
 With very minor changes, this could be used to carry out a 1:1 swap of any ERC20 token on the ethereum blockchain to a corresponding N-Token. The user workflow in our design is as follows:
 
