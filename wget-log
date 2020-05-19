@@ -1,0 +1,11 @@
+--2020-05-19 19:37:43--  https://api.etherscan.io/api?module=account
+Resolving api.etherscan.io (api.etherscan.io)... 23.111.175.138
+Connecting to api.etherscan.io (api.etherscan.io)|23.111.175.138|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 135 [application/json]
+Saving to: ‘api?module=account’
+
+api?module=account       0%[                            ]       0  --.-KB/s               api?module=account     100%[===========================>]     135  --.-KB/s    in 0s      
+
+2020-05-19 19:37:44 (10.7 MB/s) - ‘api?module=account’ saved [135/135]
+

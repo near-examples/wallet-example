@@ -21,9 +21,9 @@ async function initContract() {
   window.contract = await window.near.loadContract(nearConfig.contractName, {
     // NOTE: This configuration only needed while NEAR is still in development
     // View methods are read only. They don't modify the state, but usually return some value.
-    viewMethods: ['whoSaidHi'],
+    viewMethods: ['getResponse'],
     // Change methods can modify the state. But you don't receive the returned value when called.
-    changeMethods: ['sayHi'],
+    changeMethods: ['setResponse'],
     // Sender is the account ID to initialize transactions.
     sender: window.accountId,
   });
@@ -64,11 +64,9 @@ function signedInFlow() {
   // Displaying current account name.
   document.getElementById('account-id').innerText = window.accountId;
 
-  // Adding an event to a say-hi button.
-  document.getElementById('say-hi').addEventListener('click', () => {
-    // We call say Hi and then update who said Hi last.
-    window.contract.sayHi().then(updateWhoSaidHi);
-  });
+    document.getElementById('set-response').addEventListener('click', () => {
+    makeApiCallAndSave();
+    });
 
   // Adding an event to a sing-out button.
   document.getElementById('sign-out').addEventListener('click', e => {
@@ -80,27 +78,33 @@ function signedInFlow() {
 
   // fetch who last said hi without requiring button click
   // but wait a second so the question is legible
-  setTimeout(updateWhoSaidHi, 1000);
+    setTimeout(updateData, 1000);
 }
 
+async function makeApiCallAndSave() {
+  //for visibility purposes
+  console.log('calling api endpoint')
+  //calling endpoint
+  let response = await fetch('https://api.etherscan.io/api?module=account&action=balance&address=0xc966Ba2a41888B6B4c5273323075B98E27B9F364&tag=latest&apikey=I8UJE9Z4QTUZ3S4J31AYF1ETD1RAZVCBRT');
+  let body = await response.json();
+  //stripping only the data we want from the API response
+  //let data = body.bpi.USD.rate
+  let data = body.result/1000000000
+  //Saving the data to the blockchain by calling the Oracle Contracts setResponse function
+  await window.contract.setResponse({ apiResponse: data });
+  // Check to see if the data was saved properly
+  let apiResponse = await contract.getResponse();
+  console.log(`${apiResponse} is the API response available to the Oracle on-chain`);
+}
 // Function to update who said hi
-function updateWhoSaidHi() {
+function updateData() {
   // JavaScript tip:
   // This is another example of how to use promises. Since this function is not async,
-  // we can't await for `contract.whoSaidHi()`, instead we attaching a callback function
-  // usin `.then()`.
-  contract.whoSaidHi().then((who) => {
-    const el = document.getElementById('who');
-    el.innerText = who || 'No one';
-
-    // only link to profile if there's a profile to link to
-    if (who) {
-      el.href = 'https://explorer.nearprotocol.com/accounts/' + who;
-    }
-
-    // change the ? to a !
-    const parent = el.parentNode;
-    parent.innerHTML = parent.innerHTML.replace('?', '!');
+  // we can't await for `contract.getResponse()`, instead we attaching a callback function
+  // using `.then()`.
+  contract.getResponse().then((response) => {
+    const el = document.getElementById('response');
+    el.innerText = response || 'No data available';
   });
 }
 
