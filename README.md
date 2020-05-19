@@ -1,12 +1,14 @@
-Example of NEAR Wallet integration
+NEAR-ETH token interoperability 
 ==================================
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/wallet-example)
+This project demonstrates a basic token swap: It allows you to mint 1 N-DAI on the NEAR blockchain, for every Dai deposited in a designated ethereum contract. In turn, upon burning these N-DAI, the DAI in the designated contract is released back to the sender(or to any ETH address of the burner's choice).
 
-<!-- MAGIC COMMENT: DO NOT DELETE! Everything above this line is hidden on NEAR Examples page -->
+With very minor changes, this could be used to carry out a 1:1 swap of any ERC20 token on the ethereum blockchain to a corresponding N-Token. The user workflow in our design is as follows:
 
-This example demonstrates how to integrate your application with NEAR Wallet.
-The contract is quite simple. It can store the account_id of last sender and return it. It also shows how you can debug contracts using logs.
+1. Deposit DAI to ETH address
+2. NEAR contract detects deposited DAI and allows you to mint equivilant N-DAI
+3. N-DAI tokens can be freely exchanged on NEAR Blockchain
+4. N-DAI can be burnt by specifying a ETH address to return the DAI [NOTE: DAI RETURNS NON-FUNCTIONAL IN DEMO]
 
 ## Getting started
 
