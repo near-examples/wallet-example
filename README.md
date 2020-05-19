@@ -12,16 +12,15 @@ This project demonstrates a basic token swap: It allows you to mint 1 N-ETH on t
 
 With very minor changes, this could be used to carry out a 1:1 swap of any ERC20 token on the ethereum blockchain to a corresponding N-Token. The user workflow in our design is as follows:
 
-1. Deposit Ether to ETH address: [0xc966Ba2a41888B6B4c5273323075B98E27B9F364]
+1. Deposit Ether to Ethereum contract: [0xc966Ba2a41888B6B4c5273323075B98E27B9F364]
 
 2. NEAR contract oracle detects deposited ETH. [Done]
 
-3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [Done without UX - newx2 branch]
+3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [Done but buggy - newx2 branch]
 
-4. N-ETH tokens can be freely exchanged on NEAR Blockchain [WIP]
+4. N-ETH tokens can be freely exchanged on NEAR Blockchain. [Done, untested - newx2 branch]
 
-5. N-ETH can be burnt by specifying a ETH address to return the DAI [WIP]
-
+5. N-ETH can be burnt by specifying a ETH address to return the collateral ETH [Ethereum contract] [WIP]
 
 
 Getting started
