@@ -1,4 +1,4 @@
-Example of NEAR Wallet integration
+NEAR-ETH Token Interoperability Hack
 ==================================
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dhruvluci/wallet-example/branch/newx)
