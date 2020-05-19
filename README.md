@@ -12,11 +12,18 @@ This project demonstrates a basic token swap: It allows you to mint 1 N-DAI on t
 
 With very minor changes, this could be used to carry out a 1:1 swap of any ERC20 token on the ethereum blockchain to a corresponding N-Token. The user workflow in our design is as follows:
 
-Deposit Ether to ETH address: [0xc966Ba2a41888B6B4c5273323075B98E27B9F364]
-NEAR contract oracle detects deposited ETH. [Done]
-NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [DONE]
-N-ETH tokens can be freely exchanged on NEAR Blockchain [WIP]
-N-ETH can be burnt by specifying a ETH address to return the DAI [WIP]
+1. Deposit Ether to ETH address: [0xc966Ba2a41888B6B4c5273323075B98E27B9F364]
+
+2. NEAR contract oracle detects deposited ETH. [Done]
+
+3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [Done]
+
+4. N-ETH tokens can be freely exchanged on NEAR Blockchain [WIP]
+
+5. N-ETH can be burnt by specifying a ETH address to return the DAI [WIP]
+
+
+
 Getting started
 There are two ways to run this project. The first is the quick and a good way to instantly become familiar with this example. Once familiar, the next step is for a developer to create their own NEAR account and deploy the contract to testnet. This is covered in the following section.
 
