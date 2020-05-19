@@ -6,7 +6,7 @@ NEAR-ETH Token Interoperability Hack
 <!-- MAGIC COMMENT: DO NOT DELETE! Everything above this line is hidden on NEAR Examples page -->
 
 NEAR-ETH token interoperability
-NOTE: PLEASE SWITCH TO BRANCH NEWX FOR THE LATEST WORKING CODE
+NOTE: PLEASE switch to branch newx for working demo code
 
 This project demonstrates a basic token swap: It allows you to mint 1 N-ETH on the NEAR blockchain, for every Wei deposited in a designated ethereum contract. In turn, upon burning these N-ETH, the ETH in the designated contract is released back to the sender(or to any ETH address of the burner's choice).
 
@@ -14,7 +14,7 @@ With very minor changes, this could be used to carry out a 1:1 swap of any ERC20
 
 1. Deposit Ether to Ethereum contract: [0xc966Ba2a41888B6B4c5273323075B98E27B9F364]
 
-2. NEAR contract oracle detects deposited ETH. [Done]
+2. NEAR contract oracle detects deposited ETH. [Done] Video Demo: https://youtu.be/GkloVRmMz8U
 
 3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [Done but buggy - newx2 branch]
 
