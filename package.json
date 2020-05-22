@@ -21,7 +21,7 @@
     "jest": "^26.0.1",
     "jest-environment-node": "^26.0.1",
     "near-sdk-as": "^0.3.2",
-    "near-shell": "^0.22.0",
+    "near-shell": "^0.24.0",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
