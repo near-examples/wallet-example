@@ -15,7 +15,7 @@
     "dev": "yarn build && yarn dev:deploy:contract && parcel src/index.html"
   },
   "devDependencies": {
-    "assemblyscript": "^0.9.4",
+    "assemblyscript": "^0.10.0",
     "jest": "^26.0.1",
     "jest-environment-node": "^26.0.1",
     "near-sdk-as": "^0.3.2",
