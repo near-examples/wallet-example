@@ -15,7 +15,7 @@
     "dev": "yarn build && yarn dev:deploy:contract && parcel src/index.html"
   },
   "devDependencies": {
-    "jest": "^26.3.0",
+    "jest": "^26.4.0",
     "jest-environment-node": "^26.3.0",
     "near-sdk-as": "^0.4.2",
     "near-shell": "^0.24.9",
