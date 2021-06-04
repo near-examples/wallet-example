@@ -1,4 +1,4 @@
-import { sayHi, whoSaidHi } from "../main";
+import { sayHi, whoSaidHi } from "..";
 import { context, storage, VM } from "near-sdk-as";
 import { LAST_SENDER_KEY } from "../model";
 
