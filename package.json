@@ -6,6 +6,7 @@
     "build": "asb --verbose",
     "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/contract.wasm\" && echo \"# This file used by parcel\nCONTRACT_NAME=$(cat neardev/dev-account)\" > .env.local",
     "deploy:contract": "near deploy && rm -f .env.local",
+    "pretest": "yarn build",
     "deploy": "yarn build && yarn deploy:contract",
     "prestart": "yarn build && yarn deploy:contract",
     "start": "parcel src/index.html",
