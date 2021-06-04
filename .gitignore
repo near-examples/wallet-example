@@ -26,3 +26,5 @@ build/release
 
 # parcel config file
 .env.local
+# Wasm file
+out/
